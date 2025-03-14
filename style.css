@@ -178,3 +178,73 @@ fieldset{
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* ----- ✅ MOBILE RESPONSIVENESS ----- */
+@media (max-width: 768px) {
+    #navbar {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .box {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        font-size: 18px;
+        text-align: center;
+    }
+
+.text {
+    font-size: 24px;
+    /* Reduce font size for smaller screens */
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    /* Ensures proper width on mobile */
+}
+
+.text input,
+.text textarea {
+    width: 95%;
+    /* Prevents overflow */
+    max-width: 100%;
+    /* Ensures they don't exceed container */
+    box-sizing: border-box;
+    /* Prevents extra spacing */
+}
+
+    fieldset {
+        width: 90%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .but {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .boxy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .but {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        bottom: 20px;
+        /* Adjusted to prevent overflow */
+        right: 20px;
+        /* Adjusted to stay inside screen */
+        left: auto;
+        /* Override previous left setting */
+    }
+}
