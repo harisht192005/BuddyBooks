@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100%;
+}
+body{      
+      
+    font-family: "Iansui", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: beige;
+    /* border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(98, 44, 44);
+    border-width: 4px;
+    border-radius: 5px; */
+    
+}
+#navbar{
+    color: beige;
+    border-style: solid;
+    border-radius: 2px;
+    background-color: rgb(98, 44, 44);
+    /* border-color: rgb(98, 44, 44);
+    border-width: 4px;
+    border-radius: 5px; */
+    padding: 5px;
+    padding-left: 1.5%;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    color:beige;
+    background-color:rgb(98, 44, 44);
+    opacity: 100%;
+    border-color:rgb(98, 44, 44);
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+    margin: 40px;
+    padding: 15px;
+    font-size: 20px;
+    padding-top: 10px;
+    vertical-align: top;
+    width: 200px;
+    position: relative;
+    
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 100%;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: beige;
+    text-align: center;
+    line-height: 15px;
+    border: 2px solid transparent;
+    transition:0.5s;
+}
+.close:hover {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 1px;
+    align-items: center;
+    line-height: 15px;
+    color:rgb(98, 44, 44);
+    background-color:beige;
+    width: 15px;
+    height: 15px;
+    transition:background-color 0s,border 0s,0.5s ease-out;
+}
+
+.but{
+ 
+    position:fixed;
+    top: 90%;
+    left: 95%;
+    width: 60px;
+     height: 60px;
+    border-radius:100%;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+}
+.overly{
+    display: none;
+    position:absolute;
+    background-size:contain;
+    top: 0;
+    left: 0;
+    background-color:rgb(36, 35, 35);
+    opacity: 0.8;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    z-index: 1;
+    color: rgb(98, 44, 44);
+}
+.text{
+    display: none;
+    font-size: 50px;
+    z-index: 2;
+    background-color: transparent;
+    text-align: center;
+    position:fixed;
+    top: 20%;
+    left: 30%;
+ 
+
+}
+.text input {
+    color: beige;
+    font-family: "Iansui",cursive;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom:solid beige 2px;
+    padding: 5px;
+    margin: 2px;
+    height: 20px;
+    width: 90%;
+}
+.text textarea {
+    color: beige;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid beige 2px;
+    padding-top: 20px;
+    margin-top: 10px;
+    width: 90%;
+}
+fieldset{
+    color: beige;
+    border-style: solid;
+    border-radius: 10px;
+    background-color:rgb(98, 44, 44) ;
+    width: 500px;
+    height: 350px;
+}
+.butt,.butto,.bu{
+    font-size: 12px;
+    background-color: transparent; 
+    border-radius: 10px;
+    border: solid beige 2px;
+    color: beige;
+    padding: 5px 10px 5px 10px;
+    background-color:rgb(24, 22, 22);
+}
+
+.text ::placeholder{
+    color:rgb(178, 164, 164);
+}
+.text input,textarea:focus{
+    outline: none;
+} 
+.boxy,.box,.text,div:focus{
+    outline: none;
+    cursor:text;
+}
+.boxy{
+    margin-bottom: 80px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
