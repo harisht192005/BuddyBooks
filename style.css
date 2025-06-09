@@ -1,250 +1,60 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-html{
-    height: 100%;
-}
-body{      
-      
-    font-family: "Iansui", cursive;
-    font-weight: 400;
-    font-style: normal;
-    background-color: beige;
-    /* border-style: solid;
-    border-radius: 2px;
-    border-color: rgb(98, 44, 44);
-    border-width: 4px;
-    border-radius: 5px; */
-    
-}
-#navbar{
-    color: beige;
-    border-style: solid;
-    border-radius: 2px;
-    background-color: rgb(98, 44, 44);
-    /* border-color: rgb(98, 44, 44);
-    border-width: 4px;
-    border-radius: 5px; */
-    padding: 5px;
-    padding-left: 1.5%;
-    text-align: center;
-}
+body{
+    justify-items: center;
+    background-image: url(goku.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 30px;
 
-.box{
-    display: inline-block;
-    color:beige;
-    background-color:rgb(98, 44, 44);
-    opacity: 100%;
-    border-color:rgb(98, 44, 44);
+}
+.calculator{
+    background-color: black;
+    max-width: 420px;
+    overflow: hidden;
+    border-style: solid;
     border-radius: 10px;
-    border-width: 4px;
-    border-style: solid;
-    margin: 40px;
-    padding: 15px;
-    font-size: 20px;
-    padding-top: 10px;
-    vertical-align: top;
-    width: 200px;
-    position: relative;
-    
+    border-width: 8px;
+    border-color:rgb(169, 162, 162);
 }
-.close {
-    position: absolute;
-    top: 5px;
-    right: 3px;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    border-radius: 100%;
-    align-items: center;
-    cursor: pointer;
-    font-size: 18px;
-    color: beige;
-    text-align: center;
-    line-height: 15px;
-    border: 2px solid transparent;
-    transition:0.5s;
-}
-.close:hover {
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 1px;
-    align-items: center;
-    line-height: 15px;
-    color:rgb(98, 44, 44);
-    background-color:beige;
-    width: 15px;
-    height: 15px;
-    transition:background-color 0s,border 0s,0.5s ease-out;
-}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3px;
+    padding: 2px;
 
-.but{
- 
-    position:fixed;
-    top: 90%;
-    left: 95%;
-    width: 60px;
-     height: 60px;
-    border-radius:100%;
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 40px;
-    margin: 4px 2px;
 }
-.overly{
-    display: none;
-    position:absolute;
-    background-size:contain;
-    top: 0;
-    left: 0;
-    background-color:rgb(36, 35, 35);
-    opacity: 0.8;
+button{
+    border: none;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: rgb(169, 162, 162);
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    background-color:rgba(92, 89, 89, 0.403) ;
+    color: wheat;
+}
+input{
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2.5px;
+    border-bottom-style: solid;
+    border-bottom-color: aliceblue;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
-    z-index: 1;
-    color: rgb(98, 44, 44);
-}
-.text{
-    display: none;
-    font-size: 50px;
-    z-index: 2;
-    background-color: transparent;
-    text-align: center;
-    position:fixed;
-    top: 20%;
-    left: 30%;
- 
-
-}
-.text input {
-    color: beige;
-    font-family: "Iansui",cursive;
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    border-bottom:solid beige 2px;
-    padding: 5px;
-    margin: 2px;
-    height: 20px;
-    width: 90%;
-}
-.text textarea {
-    color: beige;
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid beige 2px;
-    padding-top: 20px;
-    margin-top: 10px;
-    width: 90%;
-}
-fieldset{
-    color: beige;
-    border-style: solid;
-    border-radius: 10px;
-    background-color:rgb(98, 44, 44) ;
-    width: 500px;
-    height: 350px;
-}
-.butt,.butto,.bu{
-    font-size: 12px;
-    background-color: transparent; 
-    border-radius: 10px;
-    border: solid beige 2px;
-    color: beige;
-    padding: 5px 10px 5px 10px;
-    background-color:rgb(24, 22, 22);
-}
-
-.text ::placeholder{
-    color:rgb(178, 164, 164);
-}
-.text input,textarea:focus{
-    outline: none;
-} 
-.boxy,.box,.text,div:focus{
-    outline: none;
-    cursor:text;
-}
-.boxy{
-    margin-bottom: 80px;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-
-/* ----- ✅ MOBILE RESPONSIVENESS ----- */
-@media (max-width: 768px) {
-    #navbar {
-        font-size: 1rem;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .box {
-        display: block;
-        width: 80%;
-        margin: 20px auto;
-        font-size: 18px;
-        text-align: center;
-    }
-
-.text {
-    font-size: 24px;
-    /* Reduce font size for smaller screens */
-    top: 15%;
-    left: 10%;
-    width: 80%;
-    /* Ensures proper width on mobile */
-}
-
-.text input,
-.text textarea {
-    width: 95%;
-    /* Prevents overflow */
+    height: 200px;
     max-width: 100%;
-    /* Ensures they don't exceed container */
-    box-sizing: border-box;
-    /* Prevents extra spacing */
+    background-color: rgba(92, 89, 89, 0.403);
+    color: wheat;    
 }
-
-    fieldset {
-        width: 90%;
-        height: auto;
-        max-width: 350px;
-    }
-
-    .but {
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .boxy {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
+::placeholder{
+    padding-top: 60px;
 }
-@media (max-width: 768px) {
-    .but {
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        bottom: 20px;
-        /* Adjusted to prevent overflow */
-        right: 20px;
-        /* Adjusted to stay inside screen */
-        left: auto;
-        /* Override previous left setting */
-    }
+button:hover{
+    background-color:rgb(152, 149, 149);
+}
+.ops{
+    background-color: rgba(255, 183, 0, 0.445);
 }

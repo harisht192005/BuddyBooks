@@ -3,46 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boky</title>
+    <title>calc</title>
+    <link rel="icon" href="calc.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <div id="navbar">
-        <h1>BUDDY BOOKS 📖</h1>
-    </div>
-    <div class="boxy">
-    <div class="box">
-        <!-- <button class="close" onclick="del(event)"></button>
-        <br> -->
-        <span class="close" onclick="del(event)">&times;</span>
-        <br>
-        <h2>THE RISE OF THE GOD</h2>
-        <br>
-        <h2>HARISH</h2>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quas, id unde nisi cupiditate suscipit? Quam, facilis! Cupiditate quis alias molestias ex totam ratione a harum doloremque reprehenderit. Commodi, officiis.</p>
+<div class="calculator">
+    <input class="box" placeholder="CALCULATE" readonly>
+    <div class="keys">
+        <button class="ops">(</button>
+        <button class="ops">)</button>
+        <button class="ops">%</button>
+        <button class="ops">AC</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="ops">/</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="ops">*</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="ops">-</button>
+        <button>0</button>
+        <button class="ops">.</button>
+        <button class="ops">=</button>
+        <button class="ops">+</button>
     </div>
 </div>
-<div class="overly">
-</div>
-<button class="but">+</button>
-    <div class="text">
-        <fieldset>
-        <legend>ADD BOOKS</legend>
-        <form>
-            <input type="text" placeholder="BOOK NAME" class="bname">
-            <input type="text" placeholder="AUTHOR NAME" class="aname">
-            <textarea placeholder="Short discription on book" class="discription"></textarea>
-            <button class="butto">ADD</button>
-            <button class="bu">RESET</button>
-            <button class="butt">CANCEL</button>
-        </form>
-        </fieldset>
-    </div>
-    <script src="book.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
